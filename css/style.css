@@ -1,0 +1,217 @@
+    main {
+        z-index: 1000;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    header,
+    nav,
+    main,
+    footer,
+    aside,
+    section,
+    div {
+        display: block;
+    }
+    
+    #wrapper {
+        margin: 0 auto;
+        width: 820px;
+        background-color: rgb(245, 139, 0);
+        position: absolute;
+        left: 25%;
+    }
+    
+    h1 {
+        font-size: 80px;
+        color: rgb(97, 63, 0);
+        margin-top: 70px;
+        font-weight: 45px;
+        text-align: center;
+    }
+    
+    h1 span {
+        outline-style: dotted;
+    }
+    
+    body {
+        background-color: rgb(245, 139, 0);
+        animation: dotsAnimation 5s infinite;
+        background-image: url(../images/Circle_Brown_Solid.svg);
+        /* background-size: 90px 90px; */
+    }
+    /* dots */
+    
+    .bg-container {
+        position: absolute;
+        height: 200vh;
+        width: 100vw;
+    }
+    
+    .bg-sub>div {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .bg-pattern {
+        top: -50%;
+        background-image: radial-gradient(#863600 20%, transparent 20%);
+        background-repeat: repeat;
+        background-size: 120px 120px;
+        animation: bg-dots 4s infinite linear;
+    }
+    
+    @keyframes bg-dots {
+        0% {
+            top: -100%;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    /* content */
+    
+    section {
+        margin-top: 15px;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    h2,
+    legend,
+    label {
+        font-size: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+    }
+    
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+    }
+    
+    legend {
+        margin-left: 300px;
+    }
+    
+    input,
+    textarea {
+        text-align: right;
+    }
+    
+    .side {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .inputWidth {
+        width: 300px;
+    }
+    
+    .inputWidthRange {
+        width: 240px;
+    }
+    
+    .inputWidthRange.btn {
+        background-color: #964B00;
+        color: rgb(245, 139, 0);
+        margin: 0 auto;
+        margin-bottom: 70px;
+        font-size: 30px;
+    }
+    
+    .inputWidthRange.btn:hover {
+        color: seashell;
+    }
+    
+    .options {
+        font-size: 18px;
+    }
+    
+    audio {
+        position: relative;
+        left: 750px;
+        bottom: 50px;
+    }
+    
+    body,
+    form,
+    main,
+    h1,
+    #wrapper,
+    html {
+        animation: change 15s infinite;
+    }
+    
+    @keyframes change {
+        0% {
+            background-color: #ff3300;
+        }
+        0% {
+            background-color: #F58B00;
+        }
+        5% {
+            background-color: #E78912;
+        }
+        10% {
+            background-color: #E37749;
+        }
+        25% {
+            background-color: #EE6B34;
+        }
+        30% {
+            background-color: #F56527;
+        }
+        35% {
+            background-color: #fc611f;
+        }
+        40% {
+            background-color: #ff5b15;
+        }
+        50% {
+            background-color: #fa5914;
+        }
+        60% {
+            background-color: #FD743A;
+        }
+        70% {
+            background-color: #FF5F1B;
+        }
+        80% {
+            background-color: #FF6624;
+        }
+        80% {
+            background-color: #FF5D18;
+        }
+        90% {
+            background-color: #ff4911;
+        }
+        95% {
+            background-color: #ff4111;
+        }
+        99% {
+            background-color: #ff3300;
+        }
+        100% {
+            background-color: #ff3300;
+        }
+    }
+    
+    #sub {
+        margin-top: 40px;
+    }

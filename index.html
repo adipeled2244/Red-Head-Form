@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>RedHead</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+    <section class="bg-container">
+        <div class="bg-sub">
+            <div class="bg-pattern"></div>
+        </div>
+    </section>
+
+    <div id="wrapper">
+        <h1>קהילת <span> &nbsp;המנומשים&nbsp;</span> והכתומים </h1>
+
+        <main>
+
+
+            <audio autoplay controls src="redhead the truth.mp3"></audio>
+
+            <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="get">
+
+                <!-- 1fullname  -->
+                <section class="side">
+                    <input class="inputWidth form-control" id="name" type="text" name="fullName" placeholder="הג'ינג'י/ת X " /> <label>:שם מלא</label>
+                </section>
+
+                <!-- 2age  -->
+                <section class="side">
+                    <input class="inputWidth form-control" type="number" required name="age" placeholder="18" min="18" max="24"> <label> :מספר נשמות</label>
+                </section>
+
+                <!-- 3gender  -->
+                <section>
+                    <label>כתומה <input type="radio" name="gender" value="female"> </label>
+                    <label> &nbsp; כתום <input type="radio" name="gender" value="male" checked> </label>
+                    <h2>&nbsp; :מין </h2>
+                </section>
+
+                <!-- 4password  -->
+                <section class="side">
+                    <input class="inputWidth form-control" id="pass" type="password" name="pass" pattern="[a-zA-Z0-9]{1,9}" placeholder="orangeXXX"><label>:סיסמא</label>
+                </section>
+
+                <!-- 5mail  -->
+                <section class="side">
+                    <input class="inputWidth form-control" type="email" name="mail" placeholder="מייל">
+                    <label>:מייל כדי שנשלח לך ספאם ותתעצבן</label>
+                </section>
+
+                <!--6website  -->
+                <section class="side">
+                    <input class="inputWidth form-control" type="url" name="website" placeholder="כתובת">
+                    <label>:קישור לקבוצת ג'ינג'ים אהובה בפייסבוק  </label>
+                </section>
+
+                <!--7coffe  -->
+                <section class="side">
+                    <select class="inputWidth form-control" name="coffee">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="a lot" selected>יותר מידי</option>
+                    </select> <label> ?כמה פעמים חשבת לשנות את צבע השיער</label>
+                </section>
+
+                <!--8temper  -->
+                <section class="side">
+                    <span>10 <input class="inputWidthRange" type="range" name="temper" min="10" max="70"> 70</span> <label>?כמה ליטרים של קרם הגנה אתה שם בים</label>
+                </section>
+
+
+                <!-- משלי-->
+                <section class="side">
+                    <span>20 <input class="inputWidthRange" type="range" name="angry"  min="20" max="90"> 90</span> <label>?מה רמת העצבים שלך</label>
+                </section>
+
+
+                <!--9interests  -->
+                <section>
+                    <fieldset>
+                        <legend> ?איזה בדיחות לא מצחיקות אותך </legend>
+                        <span class="options">אם תחבר בין כל הנמשים של ג'ינג'ים תקבל תמונה של המונה ליזה <input class="checkbox_jokes" type="checkbox" name="interests[]" value="freckles"></span>
+                        <span class="options">ג'ינג'ים מסריחים גשם <input class="checkbox_jokes" type="checkbox" name="interests[]" value="smell"></span>
+                        <span class="options">לג'ינג'ים יש פרוטקציות בפיקוד העורף <input class="checkbox_jokes" type="checkbox" name="interests[]" value="Protections"></span>
+                        <span class="options"> כשלהורים גינגים נולד ילד הם לא צריכים לבחור לו שם                            <input  class="checkbox_jokes" type="checkbox" name="interests[]" value="Fighting"></span>
+                    </fieldset>
+                </section>
+
+                <!--10phone  -->
+                <section class="side">
+                    <input class="inputWidth form-control" id="phone" type="tel" name="phone" value="" placeholder="בלבד orange חברת" pattern="[0-9]{1,}" minlength="9" maxlength="10"><label>:טלפון</label>
+                </section>
+
+                <!--11address  -->
+                <section class="side">
+                    <textarea class="inputWidth form-control" name="address" rows="2" cols="20" placeholder="נכון- יש לנו פתיל קצר אבל- יש לנו לב רחב"></textarea>
+                    <label>:מוטו</label>
+                </section>
+
+                <!-- משלי-->
+                <section>
+                    <label class="options">מיץ תפוזים <input type="radio" name="drink" value="orangejus" checked>  </label>
+                    <label class="options">&nbsp;אפרול שפריץ <input type="radio" name="drink" value="aperol"> </label>
+                    <label class="options">&nbsp;פאנטה <input type="radio" name="drink" value="fanta"> </label>
+                    <h2>&nbsp;:משקה מעודף</h2>
+                </section>
+
+                <!-- משלי-->
+                <section>
+                    <label class="options"> גזר <input type="radio" name="food" value="Carrot" checked> </label>
+                    <label class="options">&nbsp;מרק בטטה <input type="radio" name="food" value="soup"> </label>
+                    <label class="options">&nbsp;מנגו <input type="radio" name="food" value="mango"> </label>
+                    <h2> &nbsp;:מאכל מעודף</h2>
+                </section>
+
+                <input class="inputWidthRange btn" id="sub" type="submit" value="submit" id="submitButton" onclick="return checkValid()">
+
+            </form>
+        </main>
+    </div>
+    <script>
+        console.log("adi");
+        setInterval(function() {
+            alert("אולי תמלא את הטופס כבר?????? גם לנו יש פתיל קצר!!  ");
+        }, 15000)
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,19 @@
+#form2 {
+    font-family: 'Rubik', sans-serif;
+    background-color: orange;
+}
+
+.inp {
+    border-radius: 4px;
+    border: 0;
+}
+
+#sub {
+    border-radius: 4px;
+}
+
+#formphp {
+    font-family: 'Rubik', sans-serif;
+    background-color: orange;
+    margin-left: 20px;
+}
